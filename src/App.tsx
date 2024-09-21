@@ -1,12 +1,10 @@
-import { Button, Typography } from "@material-tailwind/react"
+import AppProvider from "./app/provider"
+import AppRouter from "./app/router"
 
 export default function App() {
   return (
-    <div>
-      <Typography placeholder="" variant="h1">
-        OpenSiga
-      </Typography>
-      <Button placeholder="">Button</Button>
-    </div>
+    <AppProvider>
+      <AppRouter />
+    </AppProvider>
   )
 }
